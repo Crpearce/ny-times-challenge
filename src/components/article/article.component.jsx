@@ -5,7 +5,7 @@ import "./article.styles.css";
 const Article = ({ title, image, date, byline }) => {
   const mm = `${date[5]}${date[6]}`;
   const dd = `${date[8]}${date[9]}`;
-  const yy = date.slice(0, 4);
+  const yyyy = date.slice(0, 4);
 
   return (
     <Link to={`/${date}`}>
@@ -15,7 +15,7 @@ const Article = ({ title, image, date, byline }) => {
         </div>
         <h3>{title}</h3>
         <h4>{byline}</h4>
-        <p className="card-date">{`${mm}/${dd}/${yy}`}</p>
+        <p className="card-date">{`${mm}/${dd}/${yyyy}`}</p>
       </div>
     </Link>
   );
