@@ -1,0 +1,26 @@
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: navy;
+    border-style: solid;
+    border-bottom-width: 10px;
+    border-top-width: 10px;
+    margin: 20px 5%;
+}
+  
+.nav-links-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+    
+  
