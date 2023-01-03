@@ -1,0 +1,16 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6EBE0;
+  }
+  
+  .search-box {
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 150px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
