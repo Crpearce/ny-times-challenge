@@ -8,9 +8,9 @@ const ArticleDetail = ({ articles }) => {
 
   useEffect(() => {
     window.localStorage.setItem("allNews", JSON.stringify(articles));
-    const allStories = window.localStorage.getItem("allNews");
-    if (allStories !== null) {
-      setStories(JSON.parse(allStories));
+    const stories = window.localStorage.getItem("allNews");
+    if (stories !== null) {
+      setStories(JSON.parse(stories));
     }
   }, [articles]);
 
@@ -30,21 +30,24 @@ const ArticleDetail = ({ articles }) => {
 
   return (
     <div className="detailed-container">
-      <h3>{clicked.title}</h3>
-      <h4>{clicked.abstract}</h4>
-      <div className="wrapper">
-        <img
-          className="card-image"
-          src={clicked.multimedia[0].url}
-          alt={clicked.title}
-        />
+      <div className="detail-wrapper">
+        <h3 className="detailed-title">{clicked.title}</h3>
+        <div className="wrapper">
+          <img
+            className="card-image"
+            src={clicked.multimedia[0].url}
+            alt={clicked.title}
+          />
+        </div>
+        <h4 className="detailed-author">{clicked.byline}</h4>
+        <h5>{clicked.abstract}</h5>
+        <a href={clicked.url} target="_blank">
+          <u style={{ textDecoration: "none" }}>Click here to view article</u>
+        </a>
+        <Link to="/">
+          <button>Home</button>
+        </Link>
       </div>
-      <a href={clicked.url}>
-        <u>View Full Article</u>
-      </a>
-      <Link to="/">
-        <button>Home</button>
-      </Link>
     </div>
   );
 };

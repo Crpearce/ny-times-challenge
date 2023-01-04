@@ -3,21 +3,31 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-color: navy;
-    border-style: solid;
-    border-bottom-width: 10px;
-    border-top-width: 10px;
     background-color: #F5F5F5;
     color: black;
     font-family: 'Shrikhand', cursive;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 18vh;
 }
 
-.nav-container {
-    background-color: #F5F5F5;
+h1 {
+    font-size: 5vw;
+    height: 5vh;
 }
-.nav-link {
-    padding: 10px 15px;
-    cursor: pointer;
+
+h2 {
+    font-size: 2.5vw;
+    margin-top: 0vh;
 }
-    
+
+@media only screen and (min-width:300px) and (max-width:480px) {
+    .navigation {
+        height: 12vh;
+    }
+  }
+
+
+
   
