@@ -8,7 +8,7 @@ const Article = ({ title, image, date, byline }) => {
   const yyyy = date.slice(0, 4);
 
   return (
-    <Link to={`/${date}`}>
+    <Link to={`/${date}`} style={{ textDecoration: 'none' }}>
       <div className="article-card">
         <div className="wrapper">
           <img className="card-image" src={image} alt={title} />

@@ -1,15 +1,17 @@
 import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
+
 import Home from "./routes/home/home.component";
+import DetailedView from "./routes/detailed-view/detailed-view.component";
+
 import "./App.css";
 
-
-function App() {
+const App = () => {
   const [articles, setArticles] = useState([]);
   const [searchField, setSearchField] = useState("");
   const [filteredArticles, setFilteredArticles] = useState(articles);
   const [err, setError] = useState(false);
-  
+
   const onSearchChange = (event) => {
     const searchFieldString = event.target.value.toLowerCase();
     setSearchField(searchFieldString);
@@ -44,6 +46,10 @@ function App() {
             articles={filteredArticles}
           />
         }
+      />
+      <Route
+        path="/:published_date"
+        element={<DetailedView articles={filteredArticles} />}
       />
     </Routes>
   );
