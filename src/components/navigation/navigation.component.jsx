@@ -4,7 +4,7 @@ import "./navigation.styles.css";
 
 const Navigation = () => {
   return (
-    <Link to="/" className="nav-container">
+    <Link to="/" className="nav-container" style={{ textDecoration: 'none' }}>
       <div className="navigation">
         <h1>THE NEW YORK TIMES</h1>
         <h2> NEWS READER </h2>

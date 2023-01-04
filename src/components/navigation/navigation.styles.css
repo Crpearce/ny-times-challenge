@@ -7,17 +7,14 @@
     border-style: solid;
     border-bottom-width: 10px;
     border-top-width: 10px;
-    margin: 20px 5%;
-}
-  
-.nav-links-container {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    background-color: #F5F5F5;
+    color: black;
+    font-family: 'Shrikhand', cursive;
 }
 
+.nav-container {
+    background-color: #F5F5F5;
+}
 .nav-link {
     padding: 10px 15px;
     cursor: pointer;
