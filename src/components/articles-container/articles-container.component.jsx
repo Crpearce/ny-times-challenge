@@ -1,9 +1,11 @@
 import React from "react";
 import Article from "../article/article.component";
+
 import "./articles-container.styles.css";
 
 const ArticlesContainer = ({ articles }) => {
   const displayCards = articles.map((article) => {
+    // console.log(article)
     return (
       <Article
         image={article.multimedia[0].url}

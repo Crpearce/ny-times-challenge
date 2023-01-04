@@ -4,5 +4,12 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: #F5F5F5;
+    padding-top: 20vh;
+    
+}
 
+@media only screen and (min-width:300px) and (max-width:480px) {
+    .articles-container {
+        padding-top: 14vh;
+  }
 }

@@ -2,4 +2,116 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 16vh;
+    background-color: #F5F5F5;
+}
+
+.detailed-title {
+    font-size: 1.5vw;
+    height: 45px;
+    overflow: hidden;
+    text-align: center;
+    width: 70vw;
+    text-decoration: underline;
+}
+
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  background-color: #F8F8FF;
+  box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+  border-radius: 10px;
+  height: 95vh;
+  margin-top: 5vh;
+  align-items: center;
+}
+
+h4 {
+    width: 30vw;
+    text-align: center;
+    font-size: 1vw;
+}
+
+h5 {
+  font-family: 'Noto Serif', serif;
+  text-align: center;
+  width: 60vw;
+  font-size: 1.25vw;
+}
+
+.card-image {
+  margin-top: 0vh;
+}
+
+button {
+  margin-top: 1vh;
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+  margin-bottom: 1vh;
+}
+ a { 
+  text-decoration: none;
+  color: #0f1111;
+  font-family: 'Shrikhand', cursive;
+  color: blue;
+ }
+
+button:hover {
+  background-color: #f7fafa;
+}
+
+button:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
+
+
+@media only screen and (min-width:300px) and (max-width:480px) {
+  .detailed-title {
+    font-size: 3vw;
+    height: 15vh;
+  }
+  .detail-wrapper {
+    height: 60vh;
+    margin-top: 8vh;
+  }
+
+  a {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+  .detail-wrapper {
+    height: 60vh;
+    margin-top: 10vh;
+  }
+}
+
+
+@media only screen and (min-width:769px) and (max-width:1124px) {
+  .detail-wrapper {
+    height: 60vh;
+    margin-top: 10vh;
+  }
 }
