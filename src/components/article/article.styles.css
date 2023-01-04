@@ -1,8 +1,3 @@
-.card-image {
-    object-fit: cover;
-    margin-top: 2vh;
-}
-
 .article-card {
     display: flex;
     flex-direction: column;
@@ -14,6 +9,11 @@
     margin-top: 3vh;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 10px;
+    height: 60vh;
+}
+
+.card-image {
+    object-fit: cover;
 }
 
 h3 {
@@ -44,61 +44,58 @@ h4 {
 .wrapper img {
     height: 100%;
     object-fit: contain;
-    transition: transform 400ms;
-}
-
-.wrapper:hover img {
-    transform: scale(1.1)
 }
 
 .card-date {
     font-family: 'Noto Serif', serif;
 }
 
+    @media only screen and (min-width:300px) and (max-width:480px) {
+        .article-card {
+            width: 75vw;
+            height: 40vh;
+        }
 
-@media only screen and (min-width:300px) and (max-width:480px) {
-    .article-card {
-        width: 75vw;
-        height: 40vh;
-    }
-    h3 {
-        font-size: 12px;
-        width: 60vw;
-        height: 20vh;
-    }
+        h3 {
+            font-size: 12px;
+            width: 60vw;
+            height: 20vh;
+        }
     
-    h4 {
-        width: 45vw;
-        font-size: 10px;
+        h4 {
+            width: 45vw;
+            font-size: 10px;
+        }
+
+        .card-date {
+            font-size: 10px;
+        }
     }
 
-    .card-date {
-        font-size: 10px;
-    }
-}
+    @media only screen and (min-width:481px) and (max-width:768px) {
+        .article-card {
+            width: 70vw;
+            height: 45vh;
+        }
 
-@media only screen and (min-width:481px) and (max-width:768px) {
-    .article-card {
-        width: 70vw;
-        height: 45vh;
-    }
-    h3 {
-        font-size: 16px;
-        width: 55vw;
-        height: 10vh;
-    }
+        h3 {
+            font-size: 16px;
+            width: 55vw;
+            height: 10vh;
+        }
     
-    h4 {
-        font-size: 12px;
+        h4 {
+            font-size: 12px;
+        }
+
+        .card-date {
+            font-size: 12px;
+        }
     }
 
-    .card-date {
-        font-size: 12px;
+    @media only screen and (min-width:769px) and (max-width:1024px) {
+        .article-card {
+            width: 70vw;
+            height: 45vh;
+        }
     }
-}
-@media only screen and (min-width:769px) and (max-width:1024px) {
-    .article-card {
-        width: 70vw;
-        height: 45vh;
-    }
-}

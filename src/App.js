@@ -4,8 +4,6 @@ import { useState, useEffect } from "react";
 import Home from "./routes/home/home.component";
 import DetailedView from "./routes/detailed-view/detailed-view.component";
 
-import "./App.css";
-
 const App = () => {
   const [articles, setArticles] = useState([]);
   const [searchField, setSearchField] = useState("");

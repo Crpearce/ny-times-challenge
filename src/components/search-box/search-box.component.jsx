@@ -4,7 +4,6 @@ const SearchBox = ({ onChangeHandler, placeholder }) => {
   return (
     <div className="search-container">
       <input
-        border= '2px solid red'
         className="search-box"
         type="search"
         placeholder={placeholder}
