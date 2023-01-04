@@ -12,7 +12,7 @@ This project was an 8 hour timed coding challenge designed to pull articles from
 
 Deployed UI link (https://ny-times-challenge.vercel.app/)
 ![Jan-04-2023 15-17-23](https://user-images.githubusercontent.com/101376200/210660595-28c4618a-220f-4f59-b74c-883baafabf4c.gif)
-
+![Jan-04-2023 15-25-32](https://user-images.githubusercontent.com/101376200/210661735-ea278dfa-0c65-40d3-b3fc-c200281bcbdf.gif)
 
 ## Setup
 1. Clone down this repo. Since you don't want to name your project "webpack-starter-kit", you can use an optional argument when you run `git clone` (you replace the `[...]` with the terminal command arguments): `git clone [remote-address] [what you want to name the repo]`
