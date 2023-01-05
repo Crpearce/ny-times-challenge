@@ -6,7 +6,7 @@ const ArticlesContainer = ({ articles }) => {
   const displayCards = articles.map((article) => {
     return (
       <Article
-        image={article.multimedia[0].url}
+        image={!article.multimedia ? 'article image does not exist' : article.multimedia[0].url}
         title={article.title}
         byline={article.byline}
         date={article.published_date}
