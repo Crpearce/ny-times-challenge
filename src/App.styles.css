@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
-    font-size: 2vw;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+    font-size: 1vw;
+    background-color: #F5F5F5;
 }
