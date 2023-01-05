@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 
 import Home from "./routes/home/home.component";
 import DetailedView from "./routes/detailed-view/detailed-view.component";
+import Error from "./components/error/error.component";
+
+import "./App.styles.css";
 
 const App = () => {
   const [articles, setArticles] = useState([]);
@@ -34,22 +37,38 @@ const App = () => {
   }, [articles, searchField]);
 
   return (
-    <Routes className="app-container">
-      <Route
-        path="/"
-        element={
-          <Home
-            onChangeHandler={onSearchChange}
-            placeholder="Search by Keyword"
-            articles={filteredArticles}
-          />
-        }
-      />
-      <Route
-        path="/:published_date"
-        element={<DetailedView articles={filteredArticles} />}
-      />
-    </Routes>
+    <main>
+      <Routes className="app-container">
+        <Route
+          path="/"
+          element={
+            <Home
+              onChangeHandler={onSearchChange}
+              placeholder="Search by Keyword"
+              articles={filteredArticles}
+            />
+          }
+        />
+        <Route
+          path="/:published_date"
+          element={<DetailedView articles={filteredArticles} />}
+        />
+        <Route
+          element={
+            <div>
+              <h1 className="not-found">404: Not found</h1>
+              <button className="search-page">
+                Back to Headlines
+              </button>
+            </div>
+          }
+        />
+      </Routes>
+      {articles.length === 0 && (<Error />)}
+      <div className="footer">
+        Copyright (c) 2022 The New York Times Company. All Rights Reserved.
+      </div>
+    </main>
   );
 };
 
