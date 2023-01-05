@@ -5,8 +5,8 @@ const Navigation = () => {
   return (
     <Link to="/" style={{ textDecoration: "none" }} className="nav-container">
       <div className="navigation">
-        <h1>THE NEW YORK TIMES</h1>
-        <h2> NEWS READER </h2>
+        <h1 className='app-name'>THE NEW YORK TIMES</h1>
+        <h2 className='app-sub'> NEWS READER </h2>
       </div>
     </Link>
   );
