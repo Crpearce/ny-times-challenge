@@ -31,7 +31,7 @@ const ArticleDetail = ({ articles }) => {
   return (
     <div className="detailed-container">
       <div className="detail-wrapper">
-          <h3 className="detailed-title">{clicked.title}</h3>
+        <h3 className="detailed-title">{clicked.title}</h3>
         <div className="wrapper">
           <img
             className="card-image"
