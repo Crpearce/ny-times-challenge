@@ -53,16 +53,6 @@ const App = () => {
           path="/:published_date"
           element={<DetailedView articles={filteredArticles} />}
         />
-        <Route
-          element={
-            <div>
-              <h1 className="not-found">404: Not found</h1>
-              <button className="search-page">
-                Back to Headlines
-              </button>
-            </div>
-          }
-        />
       </Routes>
       {articles.length === 0 && (<Error />)}
       <div className="footer">
