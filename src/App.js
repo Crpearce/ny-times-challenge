@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Home from "./routes/home/home.component";
 import DetailedView from "./routes/detailed-view/detailed-view.component";
 import Error from "./components/error/error.component";
+import Loading from "./components/loading/loading.component";
 
 import "./App.styles.css";
 
@@ -54,7 +55,8 @@ const App = () => {
           element={<DetailedView articles={filteredArticles} />}
         />
       </Routes>
-      {articles.length === 0 && (<Error />)}
+      {articles.length === 0 && (<Loading />)}
+      {err === true && (<Error />)}
       <div className="footer">
         Copyright (c) 2022 The New York Times Company. All Rights Reserved.
       </div>

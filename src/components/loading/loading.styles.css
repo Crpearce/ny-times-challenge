@@ -1,0 +1,13 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+}
+
+.loading {
+    font-family: "Amazon Ember",sans-serif;
+    margin-top: 15vh;
+    background-color: #F5F5F5;
+}
