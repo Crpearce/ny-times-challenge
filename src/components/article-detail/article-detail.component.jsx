@@ -31,7 +31,6 @@ const ArticleDetail = ({ articles }) => {
   return (
     <div className="detailed-container">
       <div className="detail-wrapper">
-        <h3 className="detailed-title">{clicked.title}</h3>
         <div className="wrapper">
           <img
             className="card-image"
@@ -39,6 +38,7 @@ const ArticleDetail = ({ articles }) => {
             alt={clicked.title}
           />
         </div>
+        <h3 className="detailed-title">{clicked.title}</h3>
         <h4 className="detailed-author">{clicked.byline}</h4>
         <h5>{clicked.abstract}</h5>
         <a href={clicked.url} target="_blank">
