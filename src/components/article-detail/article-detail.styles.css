@@ -8,11 +8,13 @@
 
 .detailed-title {
     font-size: 1.5vw;
-    height: 45px;
+    height: 55px;
     overflow: hidden;
     text-align: center;
     width: 70vw;
     text-decoration: underline;
+    margin-bottom: 0vh;
+    padding-bottom: 0vh;
 }
 
 .detail-wrapper {
