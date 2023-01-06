@@ -7,7 +7,7 @@ const ArticleDetail = ({ articles }) => {
   const { published_date } = useParams();
 
   useEffect(() => {
-    window.localStorage.setItem("allNews", JSON.stringify(articles));
+    localStorage.setItem("allNews", JSON.stringify(articles));
     const stories = window.localStorage.getItem("allNews");
     if (stories !== null) {
       setStories(JSON.parse(stories));
